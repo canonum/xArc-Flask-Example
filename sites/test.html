@@ -1,0 +1,8 @@
+
+{% block body %}
+  <ul>
+  {% for user in get_flashed_messages()[1] %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: "Trebuchet MS", Verdana, sans-serif;
+                font-size: 16px;
+                background-color: rgb(19, 18, 19);
+                color: #dad7d7;
+                padding: 0px;
+                margin: 0px;
+                position: relative;
+                width:100%;
+                height: 100%;
+        
+            }
+        
+            #main {
+                position: fixed;
+                left: calc(50% - 200px);
+                top:calc(50% - 250px);
+                padding: 5px;
+                padding-left:  15px;
+                padding-right: 15px;
+                width: 400px;
+                height: 500px;
+                text-align: center;
+                background-color: #08060b;
+                border-radius: 7px;
+            }
+        
+            h1 {
+                font-family: Georgia, serif;
+                border-bottom: 3px solid #ffc71f;
+                color: #ded6c8;
+                font-size: 30px;
+            }
+            a{
+                margin-left: -275px;
+                color:red;
+            }
+          </style>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+            <label><input type="file" id="myFile" name="image"></label>
+            <label><input type="text" id="myTag" name="tags"></label>
+            <input type="submit" value="Submit"> 
+        </form>
+    </body>
+</html>
